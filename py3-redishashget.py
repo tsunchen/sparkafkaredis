@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 print('start...')
 print('rds-db1')
-pool = redis.ConnectionPool(host='114.80.89.76', port=36379, db=1, password="TSRDS8104")
+pool = redis.ConnectionPool(host='x.x.x.x', port=36379, db=1, password="password")
 r = redis.Redis(connection_pool=pool)
 
 print("get name's keys: ")
