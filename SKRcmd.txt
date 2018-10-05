@@ -1,0 +1,5 @@
+[root@tsun8976 jars]# 
+spark-submit --master spark://host:7077 --class main.java.UserClickAnalytics --driver-class-path :/usr/local/spark-2.2.0-bin-hadoop2.6/jars/*  --executor-memory 500m /root/artifacts/SparKaR_TSUNx_jar2/SparKaR_TSUNx.jar
+
+spark-submit --master spark://host:7077 --class main.java.UserClickAnalytics --executor-memory 500m /root/artifacts/SparKaR_TSUNx_jar2/SparKaR_TSUNx.jar
+spark-submit --master spark://host:7077 --class main.java.KafkaProducer --executor-memory 256m /root/artifacts/SparKaR_TSUNx_jar2/SparKaR_TSUNx.jar
